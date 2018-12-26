@@ -5,9 +5,9 @@
     "description":"Search and watch videos, short films on the fly!",
 
     "icon":{
-        "128" : "icon128.png",
-        "48" : "icon48.png",
-        "16" : "icon16.png"
+        "128" : "128.png",
+        "48" : "48.png",
+        "16" : "16.png"
     },
 
     "background":{
