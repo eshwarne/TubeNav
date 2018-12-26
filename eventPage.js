@@ -10,7 +10,7 @@ function changeToURLParam (selection) {
     return encodeURI(selection).replace(/%SB/g, '[').replace(/%SB/g, ']')
 }
 
-chrome.contextMenus.onClicked.addListener(function(selection)){
+chrome.contextMenus.onClicked.addListener(function(selection){
      if (selection.menuItemId == "tubenav" && selection.selectionText){
          const tubeNavQuery="https://www.youtube.com/results?search_query=" + changeToURLParam(selection.selectionText)
          const createData = {
@@ -21,4 +21,4 @@ chrome.contextMenus.onClicked.addListener(function(selection)){
          };
          chrome.windows.create(createData,function(){})
      }
-}
+})
