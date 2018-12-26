@@ -15,10 +15,10 @@ chrome.contextMenus.onClicked.addListener(function(selection){
          const tubeNavQuery="https://www.youtube.com/results?search_query=" + changeToURLParam(selection.selectionText)
          const createData = {
              "url" : tubeNavQuery,
-             "type" : "popup",
-             "top" : 5,
-             "left" : 5
+            //  "type" : "popup",
+            //  "top" : 5,
+            //  "left" : 5
          };
-         chrome.windows.create(createData,function(){})
+         chrome.tabs.create(createData,function(){})
      }
 })
